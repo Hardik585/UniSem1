@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Framed Layout Example</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Framed Layout Example</h1>
+        </header>
+        
+        <div class="content">
+            <nav class="sidebar">
+                <ul>
+                    <li><a href="home.html" target="main-frame">Home</a></li>
+                    <li><a href="about.html" target="main-frame">About</a></li>
+                    <li><a href="services.html" target="main-frame">Services</a></li>
+                    <li><a href="contact.html" target="main-frame">Contact</a></li>
+                </ul>
+            </nav>
+            
+            <main>
+                <iframe name="main-frame" src="home.html"></iframe>
+            </main>
+        </div>
+        
+        <footer>
+            <p>Footer Content © 2024</p>
+        </footer>
+    </div>
+</body>
+</html>

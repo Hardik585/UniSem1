@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hotel Webpage - Layout</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
+
+        /* Grid Container */
+        .container {
+            display: grid;
+            grid-template-columns: 1fr 3fr;
+            grid-template-rows: auto auto 1fr;
+            grid-template-areas: 
+                "header header"
+                "sidebar main"
+                "footer footer";
+            height: 100vh;
+        }
+
+        /* Header Style */
+        header {
+            grid-area: header;
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            font-weight: bold;
+        }
+
+        /* Sidebar Style */
+        .sidebar {
+            grid-area: sidebar;
+            background-color: #f4f4f4;
+            padding: 20px;
+        }
+
+        /* Main Content Style */
+        .main-content {
+            grid-area: main;
+            padding: 180px;
+            background-color: #fff;
+            overflow-y: auto;
+        }
+
+        /* Footer Style */
+        footer {
+            grid-area: footer;
+            background-color: #4CAF50;
+            color: white;
+            text-align: center;
+            padding: 10px;
+        }
+
+        /* TOC Links */
+        .toc-link {
+            display: block;
+            margin-bottom: 10px;
+            padding: 10px;
+            background-color: #4CAF50;
+            color: white;
+            text-decoration: none;
+            text-align: center;
+            border-radius: 5px;
+        }
+
+        .toc-link:hover {
+            background-color: #45a049;
+        }
+
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <!-- Header -->
+        <header>
+            <div>WEB<br>Author: Hardik <br>Date: 2024-09-20</div>
+            <div>WEB-TECHNOLOGY</div>
+        </header>
+
+        <!-- Sidebar (Table of Contents) -->
+        <div class="sidebar">
+            <h3>Table of Contents</h3>
+            <a href="link1.html" class="toc-link" target="content-frame">Link 1</a>
+            <a href="link2.html" class="toc-link" target="content-frame">Link 2</a>
+        </div>
+
+        <!-- Main Content Area -->
+        <div class="main-content">
+            <iframe name="content-frame" src="content.html" style="width: 100%; height: 100%; border: none;"></iframe>
+        </div>
+
+        <!-- Footer -->
+        <footer>
+            &copy; 2024 Luxury Hotel
+        </footer>
+    </div>
+
+</body>
+</html>

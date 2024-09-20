@@ -1,0 +1,126 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(180deg, #001F3F, #87CEEB); /* Deep navy to sky blue */
+    color: #333; /* Text color */
+}   
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background: linear-gradient(90deg, #FF4500, #FF8C00); /* Fiery red to deep orange */
+    color: white;
+}
+
+.logo h1 {
+    font-size: 2.5em;
+}
+
+nav ul {
+    list-style-type: none;
+}
+
+nav ul li {
+    display: inline-block;
+    margin-right: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 1.2em;
+    transition: color 0.3s;
+}
+
+nav ul li a:hover {
+    color: #1abc9c;
+}
+
+.hero {
+    background: url('hotel.jpg') no-repeat center center/cover;
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-align: center;
+}
+
+.hero h2 {
+    font-size: 3em;
+    margin-bottom: 20px;
+    background: linear-gradient(90deg, #FF4500, #FFD700); /* Fire gradient */
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.hero p {
+    font-size: 1.5em;
+    margin-bottom: 30px;
+    color: #1E90FF; /* Deep blue color */
+}
+
+.hero .btn {
+    background: linear-gradient(90deg, #FF8C00, #20B2AA); /* Fiery orange to cool teal */
+    padding: 15px 30px;
+    text-decoration: none;
+    color: white;
+    font-size: 1.2em;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.hero .btn:hover {
+    background: linear-gradient(90deg, #FF4500, #1E90FF); /* Fire to deep blue on hover */
+}
+
+.about {
+    padding: 160px;
+    background-color: #ecf0f1;
+    text-align: center;
+}
+
+.about h2 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+}
+
+.about p, .about ul {
+    font-size: 1.2em;
+    line-height: 1.6;
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: left;
+}
+
+footer {
+    background-color: #CC5500;
+    padding: 20px;
+    text-align: center;
+    color: white;
+    margin-top: 0px;
+}
+
+footer p {
+    margin-bottom: 10px;
+}
+
+.social-icons a {
+    text-decoration: none;
+    color: white;
+    margin-right: 15px;
+    font-size: 1.2em;
+    transition: color 0.3s;
+}
+
+.social-icons a:hover {
+    color: #1abc9c;
+}
